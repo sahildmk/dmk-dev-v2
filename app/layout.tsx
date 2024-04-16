@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-gradient-to-tr from-neutral-900 to-neutral-950 via-neutral-800 sm:via-65% via-60%"
+      className="bg-neutral-900 bg-gradient-to-tr from-neutral-900 to-neutral-950 via-neutral-800 sm:via-65% via-60%"
     >
       <body className={GeistSans.className}>{children}</body>
     </html>
