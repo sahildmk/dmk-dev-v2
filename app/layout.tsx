@@ -1,4 +1,3 @@
-import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -13,11 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="dark bg-gradient-to-tr from-neutral-900 to-neutral-950 via-neutral-800 sm:via-65% via-60%"
-    >
-      <body className={GeistSans.className}>{children}</body>
+    <html lang="en" className="">
+      <body>{children}</body>
     </html>
   );
 }
