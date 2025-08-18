@@ -1,7 +1,7 @@
 import MongoDB from "./components/mongo";
 
 const blurStyle =
-  "motion-opacity-in-[10%] motion-blur-in-[5px] motion-duration-[2s]";
+  "motion-opacity-in-[10%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-in-out";
 
 export default function Home() {
   return (
@@ -9,11 +9,11 @@ export default function Home() {
       <div className="md:w-xl lg:w-3xl mt-30 space-y-10">
         <section className="text-stone-300">
           <h1
-            className={`text-3xl font-bold motion-preset-fade motion-duration-2000 motion-delay-200 font-serif`}
+            className={`text-3xl font-bold ${blurStyle} motion-delay-200 font-serif`}
           >
             Sahil Deshmukh
           </h1>
-          <div className="mt-2 font-light">
+          <div className="mt-4 font-light">
             <span className={`${blurStyle} motion-delay-300`}>
               Software Engineer at
             </span>
@@ -23,12 +23,21 @@ export default function Home() {
             </span>
           </div>
         </section>
-        <section className="">
-          <p className={`${blurStyle} motion-delay-500`}>
-            I love solving problems and finding ways to make people&apos;s lives
-            just a little easier. I have a large tank of creative ideas and a
-            deep interest in many areas such as solution architecture, backend
-            and frontend design, UI/UX, and security.
+        <section className="space-y-4">
+          <div className="flex space-x-2">
+            <p className={`${blurStyle} motion-delay-500`}>Hi</p>
+            <p className={`${blurStyle} motion-delay-500 motion-preset-shake`}>
+              👋
+            </p>
+          </div>
+          <p className={`${blurStyle} motion-delay-600`}>
+            I love solving meaningful problems. I also love software. Naturally,
+            I keep myself busy by solving meaningful problems with software.
+          </p>
+          <p className={`${blurStyle} motion-delay-700`}>
+            I also love learning from all the wonderfully smart and talented
+            people around me, and finding ways to share all the cool things
+            I&apos;ve learnt (I&apos;m working on being better at this).
           </p>
         </section>
       </div>
