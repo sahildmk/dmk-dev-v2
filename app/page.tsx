@@ -5,7 +5,7 @@ const blurStyle =
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-6  text-stone-300 bg-stone-900">
+    <main className="flex min-h-svh flex-col items-center justify-between p-6  text-stone-300 bg-stone-900">
       <div className="md:w-xl lg:w-3xl mt-30 space-y-10">
         <section className="text-stone-300">
           <h1
