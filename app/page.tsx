@@ -13,24 +13,6 @@ export default function Home() {
           >
             Sahil Deshmukh
           </h1>
-          <div className="mt-4 font-light">
-            <span className={`${blurStyle} motion-delay-300`}>
-              Software Engineer at
-            </span>
-            <a
-              className={`inline-block ${blurStyle} motion-delay-400 group hover:cursor-pointer`}
-              href="https://www.mongodb.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MongoDB
-                className={`size-6 inline-block group-hover:scale-120 transition-transform group-hover:rotate-20 duration-300`}
-              />
-              <p className="group-hover:scale-105 inline-block transition-all duration-300 ">
-                MongoDB
-              </p>
-            </a>
-          </div>
         </section>
         <section className="space-y-4">
           <div className="flex space-x-2">
@@ -49,6 +31,24 @@ export default function Home() {
             I also love learning from all the wonderfully smart and talented
             people around me, and finding ways to share all the cool things
             I&apos;ve learnt (I&apos;m working on being better at this).
+          </p>
+          <p>
+            <span className={`${blurStyle} motion-delay-800 mr-1`}>
+              I&apos;m currently a Software Engineer at
+            </span>
+            <a
+              className={`inline-block ${blurStyle} motion-delay-900 group hover:cursor-pointer`}
+              href="https://www.mongodb.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MongoDB
+                className={`h-6 inline-block group-hover:mr-1 motion-preset-seesaw-md group-hover:scale-120 transition-all group-hover:rotate-20 duration-300`}
+              />
+              <span className="group-hover:scale-105 inline-block transition-all duration-300 ">
+                MongoDB
+              </span>
+            </a>
           </p>
         </section>
       </div>
