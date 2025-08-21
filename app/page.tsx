@@ -5,7 +5,7 @@ const blurStyle =
 
 export default function Home() {
   return (
-    <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-300 bg-stone-900">
+    <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-400 bg-stone-900">
       <div className="md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
         <section className="text-stone-300">
           <h1
@@ -24,17 +24,20 @@ export default function Home() {
             </p>
           </div>
           <p className={`${blurStyle} motion-delay-600`}>
-            My name is <span className=" font-semibold">Sahil</span>.
+            My name is{" "}
+            <span className="text-stone-300 font-semibold">Sahil</span>.
           </p>
           <div className={`${blurStyle} motion-delay-700`}>
             <span>I&apos;m currently building </span>
-            <p className="inline-block motion-opacity-loop-60 motion-duration-[3s] motion-ease-in-out">
+            <p className="inline-block motion-opacity-loop-40 motion-duration-[4s] motion-ease-in-out">
               <a
                 href="https://www.mongodb.com/products/tools/relational-migrator"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-stone-200 transition-all duration-300 group"
               >
                 some cool things
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-stone-200"></span>
               </a>
             </p>
             <span> at </span>
@@ -48,15 +51,22 @@ export default function Home() {
                 <MongoDB
                   className={`h-6 mr-0.5 inline-block group-hover:mr-1 motion-rotate-loop-12/mirror motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
                 />
-                <span className="group-hover:scale-105 font-semibold inline-block transition-all duration-300 ">
+                <span className="group-hover:scale-105 text-stone-300 font-semibold inline-block transition-all duration-300 ">
                   MongoDB.
                 </span>
               </a>
             </p>
           </div>
           <p className={`${blurStyle} motion-delay-800`}>
-            I love solving meaningful problems. I also love software. Naturally,
-            I keep myself busy by solving meaningful problems with software.
+            I love solving{" "}
+            <span className="text-stone-300">meaningful problems</span>. I also
+            love <span className="text-stone-300">software</span>. Naturally, I
+            keep myself busy by
+            <span className="text-stone-300">
+              {" "}
+              solving meaningful problems with software
+            </span>
+            .
           </p>
           <p className={`${blurStyle} motion-delay-900`}>
             I also love learning from all the wonderfully smart and talented
