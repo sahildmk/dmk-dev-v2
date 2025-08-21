@@ -5,7 +5,7 @@ const blurStyle =
 
 export default function Home() {
   return (
-    <main className="flex min-h-svh flex-col items-center justify-between p-6  text-stone-300 bg-stone-900">
+    <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-300 bg-stone-900">
       <div className="md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
         <section className="text-stone-300">
           <h1
@@ -18,13 +18,13 @@ export default function Home() {
           <div className="flex space-x-2">
             <p className={`${blurStyle} motion-delay-500`}>Hi</p>
             <p
-              className={`${blurStyle} motion-delay-500 motion-preset-seesaw-lg`}
+              className={`${blurStyle} text-xl motion-delay-500 motion-preset-seesaw-lg`}
             >
               👋
             </p>
           </div>
           <p className={`${blurStyle} motion-delay-600`}>
-            My name is <span className="font-serif font-semibold">Sahil</span>.
+            My name is <span className=" font-semibold">Sahil</span>.
           </p>
           <div className={`${blurStyle} motion-delay-700`}>
             <span>I&apos;m currently building </span>
@@ -46,9 +46,9 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <MongoDB
-                  className={`h-6 inline-block group-hover:mr-1 motion-preset-seesaw-md group-hover:scale-120 transition-all group-hover:rotate-20 duration-300`}
+                  className={`h-6 mr-0.5 inline-block group-hover:mr-1 motion-rotate-loop-12/mirror motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
                 />
-                <span className="group-hover:scale-105 font-serif font-semibold inline-block transition-all duration-300 ">
+                <span className="group-hover:scale-105 font-semibold inline-block transition-all duration-300 ">
                   MongoDB.
                 </span>
               </a>
