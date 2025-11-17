@@ -1,4 +1,5 @@
 import MongoDB from "./components/mongo";
+import Tessl from "./components/tessl";
 
 const blurStyle =
   "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-in-out";
@@ -28,15 +29,45 @@ export default function Home() {
             <span className="text-stone-300 font-semibold">Sahil</span>.
           </p>
           <div className={`${blurStyle} motion-delay-700`}>
-            <span>I&apos;m currently building </span>
+            <span>I&apos;m currently </span>
             <p className="inline-block motion-opacity-loop-40 motion-duration-[4s] motion-ease-in-out">
+              <a
+                href="https://www.tessl.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-200 transition-all duration-300 group"
+              >
+                baby sitting coding agents
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-stone-200"></span>
+              </a>
+            </p>
+            <span> at </span>
+            <p className="inline-block">
+              <a
+                className={`inline-block group hover:cursor-pointer`}
+                href="https://www.tessl.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Tessl
+                  className={`h-6 mr-1 inline-block group-hover:mr-1 motion-preset-spin  motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
+                />
+                <span className="group-hover:scale-105 text-stone-300 font-semibold inline-block transition-all duration-300 ">
+                  Tessl.
+                </span>
+              </a>
+            </p>
+          </div>
+          <div className={`${blurStyle} motion-delay-700`}>
+            <span>I was previously building things </span>
+            <p className="inline-block ">
               <a
                 href="https://www.mongodb.com/products/tools/relational-migrator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-stone-200 transition-all duration-300 group"
               >
-                some cool things
+                to move a bunch of data around
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-stone-200"></span>
               </a>
             </p>
