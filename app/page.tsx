@@ -1,12 +1,14 @@
-import MongoDB from "./components/mongo";
-import Tessl from "./components/tessl";
+import MongoDBIcon from "./components/icons/mongodb-icon";
+import TesslIcon from "./components/icons/tessl-icon";
+import XIcon from "./components/icons/x-icon";
+import LinkedInIcon from "./components/icons/linkedin-icon";
 
 const blurStyle =
   "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-in-out";
 
 export default function Home() {
   return (
-    <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-400 bg-stone-900">
+    <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-400 bg-stone-900 relative">
       <div className="md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
         <section className="text-stone-300">
           <h1
@@ -49,7 +51,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Tessl
+                <TesslIcon
                   className={`h-6 mr-1 inline-block group-hover:mr-1 motion-preset-spin  motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
                 />
                 <span className="group-hover:scale-105 text-stone-300 font-semibold inline-block transition-all duration-300 ">
@@ -79,7 +81,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MongoDB
+                <MongoDBIcon
                   className={`h-6 mr-0.5 inline-block group-hover:mr-1 motion-rotate-loop-12/mirror motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
                 />
                 <span className="group-hover:scale-105 text-stone-300 font-semibold inline-block transition-all duration-300 ">
@@ -105,6 +107,24 @@ export default function Home() {
             I&apos;ve learnt (I&apos;m working on being better at this).
           </p>
         </section>
+        <div className={`flex gap-4 ${blurStyle} motion-delay-1000`}>
+          <a
+            href="https://x.com/sahildmk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-400 hover:text-stone-200 transition-colors duration-300"
+          >
+            <XIcon className="size-4" />
+          </a>
+          <a
+            href="https://linkedin.com/in/sahildmk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-400 hover:text-stone-200 transition-colors duration-300"
+          >
+            <LinkedInIcon className="size-4" />
+          </a>
+        </div>
       </div>
     </main>
   );
@@ -115,7 +135,7 @@ const Timeline = () => {
     <div>
       <section>
         <div className="flex items-center space-x-2">
-          <MongoDB
+          <MongoDBIcon
             className={`h-8 inline-block ${blurStyle} motion-delay-800`}
           />
           <h2

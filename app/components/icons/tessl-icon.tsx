@@ -1,5 +1,5 @@
 import type { SVGProps } from "react";
-const Tessl = (props: SVGProps<SVGSVGElement>) => (
+const TesslIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="75 55 425 470"
     xmlns="http://www.w3.org/2000/svg"
@@ -29,4 +29,4 @@ const Tessl = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Tessl;
+export default TesslIcon;
