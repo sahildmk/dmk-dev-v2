@@ -1,4 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
+import ClaudeIcon from "../components/icons/claude-icon";
+import ConductorIcon from "../components/icons/conductor.png";
+import SlackIcon from "../components/icons/slack-icon";
+import TesslIcon from "../components/icons/tessl-icon";
 import XIcon from "../components/icons/x-icon";
 import LinkedInIcon from "../components/icons/linkedin-icon";
 
@@ -15,7 +20,7 @@ export default function LondonJS() {
       <div className="md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
         <Link
           href="/"
-          className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-300 mb-6 block ${blurStyle} motion-delay-100`}
+          className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-300 mb-6 block underline decoration-1 ${blurStyle} motion-delay-100`}
         >
           ← Back
         </Link>
@@ -46,10 +51,10 @@ export default function LondonJS() {
                 href="https://tessl.io/registry"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 group"
+                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
               >
+                <TesslIcon className="size-4 shrink-0" />
                 Tessl Registry
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-stone-200"></span>
               </a>
             </li>
             <li className={`${blurStyle} motion-delay-800`}>
@@ -57,10 +62,16 @@ export default function LondonJS() {
                 href="https://www.conductor.build/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 group"
+                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
               >
+                <Image
+                  src={ConductorIcon}
+                  alt=""
+                  className="size-4 shrink-0 object-contain"
+                  width={16}
+                  height={16}
+                />
                 Conductor
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-stone-200"></span>
               </a>
             </li>
             <li className={`${blurStyle} motion-delay-900`}>
@@ -68,10 +79,21 @@ export default function LondonJS() {
                 href="https://code.claude.com/docs/en/claude-code-on-the-web"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 group"
+                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
               >
+                <ClaudeIcon className="size-4 shrink-0" />
                 Claude Code Web Agents
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-stone-200"></span>
+              </a>
+            </li>
+            <li className={`${blurStyle} motion-delay-[950ms]`}>
+              <a
+                href="https://code.claude.com/docs/en/slack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+              >
+                <SlackIcon className="size-4 shrink-0" />
+                Claude Code in Slack
               </a>
             </li>
           </ul>
@@ -81,7 +103,7 @@ export default function LondonJS() {
             href="https://x.com/sahildmk"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 hover:text-stone-200 transition-colors duration-300"
+            className="text-stone-400 hover:text-stone-200 transition-colors duration-300 underline decoration-1"
           >
             <XIcon className="size-4" />
           </a>
@@ -89,7 +111,7 @@ export default function LondonJS() {
             href="https://linkedin.com/in/sahildmk"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 hover:text-stone-200 transition-colors duration-300"
+            className="text-stone-400 hover:text-stone-200 transition-colors duration-300 underline decoration-1"
           >
             <LinkedInIcon className="size-4" />
           </a>
