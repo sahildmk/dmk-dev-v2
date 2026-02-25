@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MongoDBIcon from "./components/icons/mongodb-icon";
 import TesslIcon from "./components/icons/tessl-icon";
 import XIcon from "./components/icons/x-icon";
@@ -107,7 +108,21 @@ export default function Home() {
             I&apos;ve learnt (I&apos;m working on being better at this).
           </p>
         </section>
-        <div className={`flex gap-4 ${blurStyle} motion-delay-1000`}>
+        <section className={`space-y-2 ${blurStyle} motion-delay-1000`}>
+          <h2 className="text-stone-300 font-semibold">Talks</h2>
+          <ul className="space-y-1">
+            <li>
+              <Link
+                href="/london-js-2026-02-25"
+                className="text-stone-200 underline decoration-1 transition-all duration-300 hover:text-stone-300"
+              >
+                London JS
+              </Link>
+              <span className="text-stone-500"> — 25 Feb 2026</span>
+            </li>
+          </ul>
+        </section>
+        <div className={`flex gap-4 ${blurStyle} motion-delay-[1100ms]`}>
           <a
             href="https://x.com/sahildmk"
             target="_blank"
