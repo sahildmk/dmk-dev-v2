@@ -20,7 +20,7 @@ export default function LondonJS() {
       <div className="md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
         <Link
           href="/"
-          className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-300 mb-6 block underline decoration-1 ${blurStyle} motion-delay-100`}
+          className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-300 mb-6 block no-underline ${blurStyle} motion-delay-100`}
         >
           ← Back
         </Link>
