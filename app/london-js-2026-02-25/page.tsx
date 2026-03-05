@@ -56,6 +56,38 @@ export default function LondonJS() {
                 <TesslIcon className="size-4 shrink-0" />
                 Tessl Registry
               </a>
+              <ul className="flex flex-col items-start space-y-2 mt-2 ml-6">
+                <li>
+                  <a
+                    href="https://tessl.io/registry/skills/github/getsentry/skills/code-simplifier"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-stone-400 hover:text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1 text-sm"
+                  >
+                    code-simplifier
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://tessl.io/registry/skills/github/getsentry/skills/code-review"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-stone-400 hover:text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1 text-sm"
+                  >
+                    code-review
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://tessl.io/registry/sahildmk/pr-comment-resolver"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-stone-400 hover:text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1 text-sm"
+                  >
+                    pr-comment-resolver
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className={`${blurStyle} motion-delay-800`}>
               <a
