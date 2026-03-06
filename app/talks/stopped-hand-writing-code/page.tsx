@@ -39,31 +39,43 @@ export default function StoppedHandWritingCode() {
         </section>
         <section className={`space-y-4 ${blurStyle} motion-delay-400`}>
           <p>
-            This talk is about how I&apos;ve basically stopped hand writing
-            code, gone all‑in on AI‑native workflows, and what that&apos;s done
-            to our velocity and quality.
+            This talk is about how I&apos;ve basically{" "}
+            <span className="text-stone-200">stopped hand writing code</span>,
+            gone all‑in on{" "}
+            <span className="text-stone-200">AI‑native workflows</span>, and
+            what that&apos;s done to our{" "}
+            <span className="text-stone-200">velocity</span> and{" "}
+            <span className="text-stone-200">quality</span>.
           </p>
           <p>I explain:</p>
           <ul className="list-disc ml-6 space-y-2">
             <li>
               How we measure developer velocity (commits, change failure rate,
-              PR/Linear lead times) and how we shipped more in three weeks of
-              February than almost all of September and October while quality
-              improved.
+              PR/Linear lead times) and how we{" "}
+              <span className="text-stone-200">
+                shipped more in three weeks of February than almost all of
+                September and October
+              </span>{" "}
+              while quality improved.
             </li>
             <li>
               The workflow shift: agents handle planning and execution, I focus
-              on review, using tight feedback loops (tests, lint, type checks,
-              logs, browser, MCP).
+              on review, using tight{" "}
+              <span className="text-stone-200">feedback loops</span> (tests,
+              lint, type checks, logs, browser, MCP).
             </li>
             <li>
-              How agent docs and skills encode step‑by‑step playbooks so agents
-              can debug, simplify code, and verify their own work.
+              How{" "}
+              <span className="text-stone-200">agent docs and skills</span>{" "}
+              encode step‑by‑step playbooks so agents can debug, simplify code,
+              and verify their own work.
             </li>
             <li>
-              Parallelization with git worktrees, Conductor, and cloud agents so
-              multiple branches and tasks run in parallel while I just review and
-              make decisions.
+              <span className="text-stone-200">Parallelization</span> with git
+              worktrees,{" "}
+              <span className="text-stone-200">Conductor</span>, and cloud
+              agents so multiple branches and tasks run in parallel while I just
+              review and make decisions.
             </li>
           </ul>
           <p>
