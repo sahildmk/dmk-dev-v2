@@ -113,12 +113,12 @@ export default function Home() {
           <ul className="space-y-1">
             <li>
               <Link
-                href="/london-js-2026-02-25"
+                href="/talks/stopped-hand-writing-code"
                 className="text-stone-200 underline decoration-1 transition-all duration-300 hover:text-stone-300"
               >
-                London JS
+                I&apos;ve stopped hand writing code
               </Link>
-              <span className="text-stone-500"> — 25 Feb 2026</span>
+              <span className="text-stone-500"> — London JS, 25 Feb 2026</span>
             </li>
           </ul>
         </section>
