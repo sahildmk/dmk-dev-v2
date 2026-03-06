@@ -36,13 +36,40 @@ export default function StoppedHandWritingCode() {
           >
             And I&apos;m not the only one
           </p>
-          <p className={`text-stone-400 mt-2 ${blurStyle} motion-delay-300`}>
-            London JS — 25 February 2026
-          </p>
         </section>
-        <section className="space-y-4">
-          <p className={`${blurStyle} motion-delay-500`}>
-            Hope you enjoyed the talk!
+        <section className={`space-y-4 ${blurStyle} motion-delay-400`}>
+          <p>
+            This talk is about how I&apos;ve basically stopped hand writing
+            code, gone all‑in on AI‑native workflows, and what that&apos;s done
+            to our velocity and quality.
+          </p>
+          <p>I explain:</p>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>
+              How we measure developer velocity (commits, change failure rate,
+              PR/Linear lead times) and how we shipped more in three weeks of
+              February than almost all of September and October while quality
+              improved.
+            </li>
+            <li>
+              The workflow shift: agents handle planning and execution, I focus
+              on review, using tight feedback loops (tests, lint, type checks,
+              logs, browser, MCP).
+            </li>
+            <li>
+              How agent docs and skills encode step‑by‑step playbooks so agents
+              can debug, simplify code, and verify their own work.
+            </li>
+            <li>
+              Parallelization with git worktrees, Conductor, and cloud agents so
+              multiple branches and tasks run in parallel while I just review and
+              make decisions.
+            </li>
+          </ul>
+          <p>
+            Core message: offload the mechanical coding to agents, keep humans
+            on direction, constraints, and review, and you can ship much faster
+            without sacrificing quality.
           </p>
         </section>
         <section className="space-y-4">
