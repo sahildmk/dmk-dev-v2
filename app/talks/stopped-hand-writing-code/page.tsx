@@ -27,14 +27,14 @@ export default function StoppedHandWritingCode() {
         </Link>
         <section className="text-stone-300">
           <h1
-            className={`text-3xl font-bold ${blurStyle} motion-delay-200 font-serif`}
+            className={`text-3xl font-semibold ${blurStyle} motion-delay-200 font-serif`}
           >
             I&apos;ve stopped hand writing code
           </h1>
           <p
             className={`text-xl font-serif text-stone-500 mt-1 ${blurStyle} motion-delay-250`}
           >
-            and I&apos;m not the only one
+            And I&apos;m not the only one
           </p>
           <p className={`text-stone-400 mt-2 ${blurStyle} motion-delay-300`}>
             London JS — 25 February 2026
@@ -49,27 +49,20 @@ export default function StoppedHandWritingCode() {
           <h2
             className={`text-xl font-semibold text-stone-300 font-serif ${blurStyle} motion-delay-550`}
           >
-            📺 Watch
-          </h2>
-          <div className={`${blurStyle} motion-delay-600`}>
-            <a
-              href="https://www.youtube.com/watch?v=NM0LCfjISfY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
-            >
-              <YouTubeIcon className="size-4 shrink-0" />
-              Watch on YouTube
-            </a>
-          </div>
-        </section>
-        <section className="space-y-4">
-          <h2
-            className={`text-xl font-semibold text-stone-300 font-serif ${blurStyle} motion-delay-650`}
-          >
-            🔗 Links
+            Links
           </h2>
           <ul className="flex flex-col items-start space-y-3">
+            <li className={`${blurStyle} motion-delay-600`}>
+              <a
+                href="https://www.youtube.com/watch?v=NM0LCfjISfY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+              >
+                <YouTubeIcon className="size-4 shrink-0" />
+                Watch on YouTube
+              </a>
+            </li>
             <li className={`${blurStyle} motion-delay-700`}>
               <a
                 href="https://tessl.io/registry"
