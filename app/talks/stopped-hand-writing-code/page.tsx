@@ -29,8 +29,13 @@ export default function StoppedHandWritingCode() {
           <h1
             className={`text-3xl font-bold ${blurStyle} motion-delay-200 font-serif`}
           >
-            I&apos;ve stopped hand writing code (and I&apos;m not the only one)
+            I&apos;ve stopped hand writing code
           </h1>
+          <p
+            className={`text-xl font-serif text-stone-500 mt-1 ${blurStyle} motion-delay-250`}
+          >
+            and I&apos;m not the only one
+          </p>
           <p className={`text-stone-400 mt-2 ${blurStyle} motion-delay-300`}>
             London JS — 25 February 2026
           </p>
