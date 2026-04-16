@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const blurStyle =
-  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-out";
+  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease";
 
 export default function StoppedHandWritingCode() {
   return (

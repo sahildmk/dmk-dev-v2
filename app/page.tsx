@@ -5,7 +5,7 @@ import XIcon from "./components/icons/x-icon";
 import LinkedInIcon from "./components/icons/linkedin-icon";
 
 const blurStyle =
-  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-out";
+  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease";
 
 export default function Home() {
   return (
