@@ -5,7 +5,7 @@ import XIcon from "./components/icons/x-icon";
 import LinkedInIcon from "./components/icons/linkedin-icon";
 
 const blurStyle =
-  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-in-out";
+  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease-out";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <div className={`${blurStyle} motion-delay-700`}>
             <span>I&apos;m currently </span>
-            <p className="inline-block motion-opacity-loop-40 motion-duration-[4s] motion-ease-in-out">
+            <p className="inline-block motion-opacity-loop-40 motion-duration-[4s] motion-ease-out">
               <a
                 href="https://www.tessl.io/"
                 target="_blank"
@@ -53,7 +53,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <TesslIcon
-                  className={`h-6 mr-1 inline-block group-hover:mr-1 motion-preset-spin  motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
+                  className={`h-6 mr-1 inline-block group-hover:mr-1 motion-preset-spin  motion-duration-[3s] motion-ease-out group-hover:scale-120 transition-all duration-300`}
                 />
                 <span className="group-hover:scale-105 text-stone-300 font-semibold inline-block transition-all duration-300 ">
                   Tessl.
@@ -83,7 +83,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <MongoDBIcon
-                  className={`h-6 mr-0.5 inline-block group-hover:mr-1 motion-rotate-loop-12/mirror motion-duration-[3s] motion-ease-in-out group-hover:scale-120 transition-all duration-300`}
+                  className={`h-6 mr-0.5 inline-block group-hover:mr-1 motion-rotate-loop-12/mirror motion-duration-[3s] motion-ease-out group-hover:scale-120 transition-all duration-300`}
                 />
                 <span className="group-hover:scale-105 text-stone-300 font-semibold inline-block transition-all duration-300 ">
                   MongoDB.
