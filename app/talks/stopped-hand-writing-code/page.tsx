@@ -18,7 +18,7 @@ const blurStyle =
 export default function StoppedHandWritingCode() {
   return (
     <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-400 bg-stone-900 relative">
-      <div className="w-full md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
+      <div className="w-full md:w-xl lg:w-3xl sm:mt-40 sm:space-y-10 space-y-10">
         <Link
           href="/"
           className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-300 mb-6 block no-underline ${blurStyle} motion-delay-100`}
