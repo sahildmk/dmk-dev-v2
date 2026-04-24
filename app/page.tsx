@@ -10,7 +10,7 @@ const blurStyle =
 export default function Home() {
   return (
     <main className="flex min-h-svh flex-col items-center justify-between p-8 text-stone-400 bg-stone-900 relative">
-      <div className="md:w-xl lg:w-3xl mt-40 sm:space-y-10 space-y-10">
+      <div className="md:w-xl lg:w-3xl mt-16 sm:mt-40 sm:space-y-10 space-y-10">
         <section className="text-stone-300">
           <h1
             className={`text-3xl font-bold ${blurStyle} motion-delay-200 font-serif`}
