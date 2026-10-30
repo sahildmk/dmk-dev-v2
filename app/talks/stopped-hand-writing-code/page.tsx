@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const blurStyle =
-  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-[2s] motion-ease";
+  "motion-opacity-in-[5%] motion-blur-in-[5px] motion-duration-1000 motion-ease-[cubic-bezier(0.23,1,0.32,1)]";
 
 export default function StoppedHandWritingCode() {
   return (
@@ -21,23 +21,23 @@ export default function StoppedHandWritingCode() {
       <div className="w-full md:w-xl lg:w-3xl sm:mt-40 sm:space-y-10 space-y-10">
         <Link
           href="/"
-          className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-300 mb-6 block no-underline ${blurStyle} motion-delay-100`}
+          className={`text-sm text-stone-500 hover:text-stone-300 transition-colors duration-200 mb-6 block no-underline ${blurStyle}`}
         >
           ← Back
         </Link>
         <section className="text-stone-300">
           <h1
-            className={`text-3xl font-semibold ${blurStyle} motion-delay-200 font-serif`}
+            className={`text-3xl font-semibold ${blurStyle} motion-delay-[40ms] font-serif`}
           >
             I&apos;ve stopped hand writing code
           </h1>
           <p
-            className={`text-xl font-serif text-stone-500 mt-1 ${blurStyle} motion-delay-250`}
+            className={`text-xl font-serif text-stone-500 mt-1 ${blurStyle} motion-delay-[80ms]`}
           >
             And I&apos;m not the only one
           </p>
         </section>
-        <section className={`space-y-4 ${blurStyle} motion-delay-400`}>
+        <section className={`space-y-4 ${blurStyle} motion-delay-[120ms]`}>
           <p>
             This talk is about how I&apos;ve basically{" "}
             <span className="text-stone-200">stopped hand writing code</span>,
@@ -86,28 +86,28 @@ export default function StoppedHandWritingCode() {
         </section>
         <section className="space-y-4">
           <h2
-            className={`text-xl font-semibold text-stone-300 font-serif ${blurStyle} motion-delay-550`}
+            className={`text-xl font-semibold text-stone-300 font-serif ${blurStyle} motion-delay-[160ms]`}
           >
             Links
           </h2>
           <ul className="flex flex-col items-start space-y-3">
-            <li className={`${blurStyle} motion-delay-600`}>
+            <li className={`${blurStyle} motion-delay-[200ms]`}>
               <a
                 href="https://www.youtube.com/watch?v=NM0LCfjISfY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+                className="text-stone-200 inline-flex items-center gap-2 underline decoration-1"
               >
                 <YouTubeIcon className="size-4 shrink-0" />
                 Watch on YouTube
               </a>
             </li>
-            <li className={`${blurStyle} motion-delay-700`}>
+            <li className={`${blurStyle} motion-delay-[240ms]`}>
               <a
                 href="https://tessl.io/registry"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+                className="text-stone-200 inline-flex items-center gap-2 underline decoration-1"
               >
                 <TesslIcon className="size-4 shrink-0" />
                 Tessl Registry
@@ -118,7 +118,7 @@ export default function StoppedHandWritingCode() {
                     href="https://tessl.io/registry/skills/github/getsentry/skills/code-simplifier"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-stone-400 hover:text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1 text-sm"
+                    className="text-stone-400 hover:text-stone-200 transition-colors duration-200 inline-flex items-center gap-2 underline decoration-1 text-sm"
                   >
                     code-simplifier
                   </a>
@@ -128,7 +128,7 @@ export default function StoppedHandWritingCode() {
                     href="https://tessl.io/registry/skills/github/getsentry/skills/code-review"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-stone-400 hover:text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1 text-sm"
+                    className="text-stone-400 hover:text-stone-200 transition-colors duration-200 inline-flex items-center gap-2 underline decoration-1 text-sm"
                   >
                     code-review
                   </a>
@@ -138,19 +138,19 @@ export default function StoppedHandWritingCode() {
                     href="https://tessl.io/registry/sahildmk/pr-comment-resolver"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-stone-400 hover:text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1 text-sm"
+                    className="text-stone-400 hover:text-stone-200 transition-colors duration-200 inline-flex items-center gap-2 underline decoration-1 text-sm"
                   >
                     pr-comment-resolver
                   </a>
                 </li>
               </ul>
             </li>
-            <li className={`${blurStyle} motion-delay-800`}>
+            <li className={`${blurStyle} motion-delay-[280ms]`}>
               <a
                 href="https://www.conductor.build/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+                className="text-stone-200 inline-flex items-center gap-2 underline decoration-1"
               >
                 <Image
                   src={ConductorIcon}
@@ -162,23 +162,23 @@ export default function StoppedHandWritingCode() {
                 Conductor
               </a>
             </li>
-            <li className={`${blurStyle} motion-delay-900`}>
+            <li className={`${blurStyle} motion-delay-[320ms]`}>
               <a
                 href="https://code.claude.com/docs/en/claude-code-on-the-web"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+                className="text-stone-200 inline-flex items-center gap-2 underline decoration-1"
               >
                 <ClaudeIcon className="size-4 shrink-0" />
                 Claude Code Web Agents
               </a>
             </li>
-            <li className={`${blurStyle} motion-delay-[950ms]`}>
+            <li className={`${blurStyle} motion-delay-[360ms]`}>
               <a
                 href="https://code.claude.com/docs/en/slack"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-200 transition-all duration-300 inline-flex items-center gap-2 underline decoration-1"
+                className="text-stone-200 inline-flex items-center gap-2 underline decoration-1"
               >
                 <SlackIcon className="size-4 shrink-0" />
                 Claude Code in Slack
@@ -186,12 +186,12 @@ export default function StoppedHandWritingCode() {
             </li>
           </ul>
         </section>
-        <div className={`flex gap-4 ${blurStyle} motion-delay-1000`}>
+        <div className={`flex gap-4 ${blurStyle} motion-delay-[400ms]`}>
           <a
             href="https://x.com/sahildmk"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 hover:text-stone-200 transition-colors duration-300 underline decoration-1"
+            className="text-stone-400 hover:text-stone-200 transition-colors duration-200 underline decoration-1"
           >
             <XIcon className="size-4" />
           </a>
@@ -199,7 +199,7 @@ export default function StoppedHandWritingCode() {
             href="https://linkedin.com/in/sahildmk"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 hover:text-stone-200 transition-colors duration-300 underline decoration-1"
+            className="text-stone-400 hover:text-stone-200 transition-colors duration-200 underline decoration-1"
           >
             <LinkedInIcon className="size-4" />
           </a>
